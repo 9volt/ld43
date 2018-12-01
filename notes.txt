@@ -1,0 +1,14 @@
+43: sacrifices must be made
+
+
+asteroids: one scene, should create itself and move forward ??? or would that happen in the parent scene?
+components -> part -> boon
+
+
+figure out collisions
+
+
+
+x red right
+y green up
+z blue forward
