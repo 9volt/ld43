@@ -33,13 +33,13 @@ far = 100.0
 
 [node name="Ship" parent="." index="0" instance=ExtResource( 1 )]
 
-transform = Transform( 0.403048, 0, 0, 0, 0.403048, 0, 0, 0, 0.403048, 0, 0, -1.79914 )
+transform = Transform( 0.403048, 0, 0, 0, 0.403048, 0, 0, 0, 0.403048, 0, 0, -4.62321 )
 _sections_unfolded = [ "Angular", "Axis Lock", "Linear", "Transform", "Visibility" ]
 dampening = 0.8
 
 [node name="fastroid" type="RigidBody" parent="." index="1"]
 
-transform = Transform( 0.354878, 0, 0, 0, 0.354878, 0, 0, 0, 0.354878, -2.357, 0.491395, -1.78497 )
+transform = Transform( 0.354878, 0, 0, 0, 0.354878, 0, 0, 0, 0.354878, -1.89726, 0.108653, -4.25942 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
