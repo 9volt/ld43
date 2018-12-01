@@ -39,40 +39,29 @@ dampening = null
 
 [node name="Component" parent="." index="0" instance=ExtResource( 2 )]
 
-[node name="Component8" parent="." index="1" instance=ExtResource( 2 )]
+[node name="Thruster" parent="." index="1" instance=ExtResource( 3 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15956, 0, 0 )
+transform = Transform( -0.999564, -0.029519, 0, 0.029519, -0.999564, 0, 0, 0, 1, -0.0806031, 2.45535, 1.35145 )
+_sections_unfolded = [ "Collision", "Transform" ]
+key = "S"
+direction = 1
 
-[node name="Component9" parent="." index="2" instance=ExtResource( 2 )]
+[node name="Thruster4" parent="." index="2" instance=ExtResource( 3 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.23346, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012373, -2.29457, 1.34866 )
+key = "S"
+direction = 0
 
-[node name="Component2" parent="." index="3" instance=ExtResource( 2 )]
+[node name="Thruster2" parent="." index="3" instance=ExtResource( 3 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15512, 0 )
+transform = Transform( -0.0532317, 0.998582, 0, -0.998582, -0.0532317, 0, 0, 0, 1, -2.97275, 0.37003, 0.407272 )
+key = "A"
+direction = 3
 
-[node name="Component6" parent="." index="4" instance=ExtResource( 2 )]
+[node name="Thruster3" parent="." index="4" instance=ExtResource( 3 )]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11162, 2.15512, 0 )
-
-[node name="Component7" parent="." index="5" instance=ExtResource( 2 )]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17762, 2.15512, 0 )
-
-[node name="Component3" parent="." index="6" instance=ExtResource( 2 )]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.22861, 0 )
-
-[node name="Component4" parent="." index="7" instance=ExtResource( 2 )]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.19794, -2.22861, 0 )
-
-[node name="Component5" parent="." index="8" instance=ExtResource( 2 )]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24183, -2.22861, 0 )
-
-[node name="Thruster" parent="." index="9" instance=ExtResource( 3 )]
-
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.33005, -0.316917, 0.95932 )
+transform = Transform( -0.0418845, -0.999122, 0, 0.999122, -0.0418845, 0, 0, 0, 1, 2.51818, 0.37003, 0.407272 )
+key = "A"
+direction = 2
 
 
