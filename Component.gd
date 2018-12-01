@@ -20,4 +20,4 @@ func _ready():
 func _on_Component_body_entered(body):
 	hide()
 	emit_signal("hit")
-	CollisionShape.disabled = true
+	$CollisionShape.disabled = true
