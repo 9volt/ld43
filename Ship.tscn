@@ -1,14 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Ship.gd" type="Script" id=1]
-
-[sub_resource type="CubeMesh" id=1]
-
-custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
-size = Vector3( 2, 2, 2 )
-subdivide_width = 0
-subdivide_height = 0
-subdivide_depth = 0
+[ext_resource path="res://Component.tscn" type="PackedScene" id=2]
 
 [node name="Ship" type="RigidBody"]
 
@@ -43,148 +36,38 @@ rot_speed = 1.0
 trans_speed = 1.0
 dampening = null
 
-[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
+[node name="Component" parent="." index="0" instance=ExtResource( 2 )]
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, 0, 0, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component8" parent="." index="1" instance=ExtResource( 2 )]
 
-[node name="MeshInstance2" type="MeshInstance" parent="." index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15956, 0, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, 2.12803, 0, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component9" parent="." index="2" instance=ExtResource( 2 )]
 
-[node name="MeshInstance3" type="MeshInstance" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.23346, 0, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, -2.04658, 0, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component2" parent="." index="3" instance=ExtResource( 2 )]
 
-[node name="MeshInstance4" type="MeshInstance" parent="." index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15512, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, 0, -2.09846, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component6" parent="." index="4" instance=ExtResource( 2 )]
 
-[node name="MeshInstance5" type="MeshInstance" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11162, 2.15512, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, -2.1769, -2.08832, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component7" parent="." index="5" instance=ExtResource( 2 )]
 
-[node name="MeshInstance6" type="MeshInstance" parent="." index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17762, 2.15512, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, 2.15305, -2.08832, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component3" parent="." index="6" instance=ExtResource( 2 )]
 
-[node name="MeshInstance7" type="MeshInstance" parent="." index="6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.22861, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, 2.15305, 2.10445, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component4" parent="." index="7" instance=ExtResource( 2 )]
 
-[node name="MeshInstance8" type="MeshInstance" parent="." index="7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.19794, -2.22861, 0 )
 
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, -0.0295441, 2.10445, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+[node name="Component5" parent="." index="8" instance=ExtResource( 2 )]
 
-[node name="MeshInstance9" type="MeshInstance" parent="." index="8"]
-
-transform = Transform( 0.926786, 0, 0, 0, 0.946415, 0, 0, 0, 0.305813, -2.09636, 2.11366, -0.000520229 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = SubResource( 1 )
-skeleton = NodePath("..")
-material/0 = null
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24183, -2.22861, 0 )
 
 
