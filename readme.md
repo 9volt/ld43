@@ -1,5 +1,4 @@
 ## Sacrifices Must be Made
------------------------
 
 A Ludum Dare game by Quasar Jarosz and Joseph Utecht
 
@@ -14,3 +13,11 @@ Prototype core gameplay of translate/rotate and having holes knocked through shi
 Possible expansions.
 -------------------
 Galaxy Trucker-esque ship upgrades
+
+
+Scene Hierarchy
+--------------
+HyperSpace (spawns astroids, bounds ship)
+--Ship (handles player input/movement of components)
+----Component (listens for impacts)
+--Astroid (shoots forward on instantiation)
