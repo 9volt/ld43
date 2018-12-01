@@ -47,13 +47,13 @@ func _process(delta):
 	match direction:
 		UP:
 			if Input.is_action_pressed("translate_up"):
-				ship.apply_impulse(our_location, to_global(Vector3(0, -1, 0)) * thrust)
+				ship.apply_impulse(our_location, our_basis.y * thrust)
 		DOWN:
 			if Input.is_action_pressed("translate_down"):
-				ship.apply_impulse(our_location, to_global(Vector3(0, -1, 0)) * thrust)
+				ship.apply_impulse(our_location, our_basis.y * thrust)
 		LEFT:
 			if Input.is_action_pressed("translate_left"):
-				ship.apply_impulse(our_location, to_global(Vector3(0, -1, 0)) * thrust)
+				ship.apply_impulse(our_location, our_basis.y * thrust)
 		RIGHT:
 			if Input.is_action_pressed("translate_right"):
-				ship.apply_impulse(our_location, to_global(Vector3(0, -1, 0)) * thrust)
+				ship.apply_impulse(our_location, our_basis.y * thrust)

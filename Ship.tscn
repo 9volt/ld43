@@ -28,9 +28,9 @@ axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = false
 linear_velocity = Vector3( 0, 0, 0 )
-linear_damp = -1.0
+linear_damp = 0.5
 angular_velocity = Vector3( 0, 0, 0 )
-angular_damp = -1.0
+angular_damp = 0.5
 script = ExtResource( 1 )
 _sections_unfolded = [ "Angular", "Axis Lock", "Linear" ]
 rot_speed = 1.0
@@ -52,13 +52,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012373, -2.29457, 1.34866 )
 key = "S"
 direction = 0
 
-[node name="Thruster2" parent="." index="3" instance=ExtResource( 3 )]
+[node name="Thruster5" parent="." index="3" instance=ExtResource( 3 )]
 
-transform = Transform( -0.0532317, 0.998582, 0, -0.998582, -0.0532317, 0, 0, 0, 1, -2.97275, 0.37003, 0.407272 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.98763, -2.29457, 1.34866 )
+key = "S"
+direction = 0
+
+[node name="Thruster2" parent="." index="4" instance=ExtResource( 3 )]
+
+transform = Transform( -0.0532317, 0.998582, 0, -0.998582, -0.0532317, 0, 0, 0, 1, -2.97275, 0.243822, 0.407272 )
 key = "A"
 direction = 3
 
-[node name="Thruster3" parent="." index="4" instance=ExtResource( 3 )]
+[node name="Thruster3" parent="." index="5" instance=ExtResource( 3 )]
 
 transform = Transform( -0.0418845, -0.999122, 0, 0.999122, -0.0418845, 0, 0, 0, 1, 2.51818, 0.37003, 0.407272 )
 key = "A"
