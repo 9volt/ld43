@@ -28,14 +28,16 @@ func _ready():
 
 func _process(delta):
 	var ship = get_tree().get_root().find_node("Ship", true, false)
+	var line = get_tree().get_root().find_node("line", true, false)
 	var our_location = get_transform().origin
 	var ship_basis = ship.get_transform().basis
 	var our_basis = get_transform().basis
 	
+	
 	if Input.is_action_pressed("ui_left"):
-		ship.apply_impulse(Vector3(0, 0, 0), ship_basis.x * -thrust)
+		ship.rotate(Vector3(0, 0, 1), PI*delta)
 	if Input.is_action_pressed("ui_right"):
-		ship.apply_impulse(Vector3(0, 0, 0), ship_basis.x * thrust)
+		ship.rotate(Vector3(0, 0, -1), PI*delta)
 	if Input.is_action_pressed("ui_up"):
 		ship.apply_impulse(Vector3(0, 0, 0), ship_basis.y * thrust)
 	if Input.is_action_pressed("ui_down"):
@@ -47,13 +49,26 @@ func _process(delta):
 	match direction:
 		UP:
 			if Input.is_action_pressed("translate_up"):
-				ship.apply_impulse(our_location, our_basis.y * thrust)
+				var direction = global_transform.basis.xform(Vector3(0, 1, 0) * thrust)
+				var location = global_transform.basis.xform(Vector3(0, 0, 0))
+			
+				ship.apply_impulse(location, direction)
+
 		DOWN:
 			if Input.is_action_pressed("translate_down"):
-				ship.apply_impulse(our_location, our_basis.y * thrust)
+				var direction = global_transform.basis.xform(Vector3(0, 1, 0) * thrust)
+				var location = global_transform.basis.xform(Vector3(0, 0, 0))
+			
+				ship.apply_impulse(location, direction)
 		LEFT:
 			if Input.is_action_pressed("translate_left"):
-				ship.apply_impulse(our_location, our_basis.y * thrust)
+				var direction = global_transform.basis.xform(Vector3(0, 1, 0) * thrust)
+				var location = global_transform.basis.xform(Vector3(0, 0, 0))
+			
+				ship.apply_impulse(location, direction)
 		RIGHT:
 			if Input.is_action_pressed("translate_right"):
-				ship.apply_impulse(our_location, our_basis.y * thrust)
+				var direction = global_transform.basis.xform(Vector3(0, 1, 0) * thrust)
+				var location = global_transform.basis.xform(Vector3(0, 0, 0))
+			
+				ship.apply_impulse(location, direction)
